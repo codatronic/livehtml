@@ -1,11 +1,18 @@
 <html>
 <head>
 <title>livehtml</title>
+<script>
+  function vh()
+  {
+    var us = document.getElementById('form').value;
+    document.getElementById('htmlfield').innerHTML = us;
+  }
+  
+</script>
 </head>
 <body>
 <p id='htmlfield'>nothing here</p>
-<form id="usrform">
-<textarea rows="4" cols="50" form="usrform">
+<textarea rows="4" cols="50" id="form">
 Enter code here...</textarea>
 <button onclick='vh()'>Validate &amp; Test</button>
 </form>
